@@ -34,7 +34,7 @@ Lorem ipsum...
   { $: 'br', self_closed: true },
 ]
 ```
-### Triskel Nodes List
+### Triskel Nodes List (`TSList`)
 
 > Basically Triskel format is a multi-level list of strings or objects, where strings represents DOM Text Nodes and objects represents DOM Element Nodes.
 
@@ -55,6 +55,21 @@ Every `Object` in list describes a single DOM Element Node using following prope
 
 ## TriskelJS suite repos:
 
-- [parser](https://github.com/triskeljs/parser)
-  Converts String HTML to a Structured Triskel List
+- [parser](https://github.com/triskeljs/parser#readme)
+  Converts String HTML to a Triskel Structured List
 
+- [stringify](https://github.com/triskeljs/stringify#readme)
+  Converts back a Triskel Structured List to a HTML String
+  
+- [tinyhtml](https://github.com/triskeljs/tinyhtml#readme)
+  Based on previous libraries, converts HTML String into a TSList and the resulting list back to a HTML String.
+  Using Options for remove comments, spaces, etc resulting a minified HTML.
+
+- [render](https://github.com/triskeljs/render#readme)
+  Renders recursivelly a TSList into a DOM node. Render library offers two time processing callbacks:
+    - `withNode` *Function*, this callbacks allows process every single node rendered and set when to, replace by a comment or attach a initNode callback
+    - `initNode` *Function*, this callback is executed only for the nodes determined by `withNode` for initialize the node before all nodes are rendered
+
+- [con-text](https://github.com/triskeljs/con-text#readme)
+  Provides a context for processing text in rendering time.
+  Context allows to define filters for evaluating text expressions ` person.first_name | toUpperCase ` (` expression | filterFn `) and for interpolating texts with expressions `Hi {{ person.first_name }}! How are you?`
