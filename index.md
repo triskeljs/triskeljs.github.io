@@ -56,7 +56,7 @@ Every `Object` in list describes a single DOM Element Node using following prope
 ## TriskelJS suite repos:
 
 - [parser](https://github.com/triskeljs/parser#readme)
-  Converts String HTML to a [TSList](#triskel-structured-list-tslist)
+  Converts String HTML to a [TSList]
 
 - [stringify](https://github.com/triskeljs/stringify#readme)
   Converts back a [TSList](#triskel-structured-list-tslist) to a HTML String
