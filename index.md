@@ -1,15 +1,17 @@
-## Triskel JS
+# Triskel JS
 
-Triskel aims to provide a suite of tools to process triskel HTML format.
+Triskel aims to provide a suite of tools to process triskel HTML structure.
 
-### Triskel HTML format
+## Triskel HTML structure
 
 There are several options to incorpotare HTML to a JS bundle code.
 - Escaped HTML string
 - Preprocessed functions that renders HTML, like EJS, Vue or React
 - ~JSON~ JS Objects representing a HTML structure
 
-Triskel JS is based on the last option. So, an HTML like this:
+Triskel JS is based on the last option.
+
+> From a HTML like this:
 
 ``` html
 <ul class="col-md-6">
@@ -20,7 +22,7 @@ Lorem ipsum...
 <br/>
 ```
 
-Is parsed in an Object like that:
+> Is parsed into an Object with following structure:
 
 ``` js
 [
@@ -32,7 +34,7 @@ Is parsed in an Object like that:
   { $: 'br', self_closed: true },
 ]
 ```
-# Nodes list
+### Triskel Nodes List
 
 > Basically Triskel format is a multi-level list of strings or objects, where strings represents DOM Text Nodes and objects represents DOM Element Nodes.
 
@@ -50,4 +52,9 @@ Every `Object` in list describes a single DOM Element Node using following prope
   - _: Node children `<Array, String>`
     - `Array`: Recursive Nodes List `[Object, String, Object, ...]`
     - `String`: When a child is just a String, it represents a single Text Node child
+
+## TriskelJS suite repos:
+
+- [parser](https://github.com/triskeljs/parser)
+  Converts String HTML to a Structured Triskel List
 
