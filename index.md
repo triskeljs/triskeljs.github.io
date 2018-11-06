@@ -59,14 +59,14 @@ Every `Object` in list describes a single DOM Element Node using following prope
   Converts String HTML to a [TSList]
 
 - [stringify](https://github.com/triskeljs/stringify#readme)
-  Converts back a [TSList](#triskel-structured-list-tslist) to a HTML String
+  Converts back a [TSList] to a HTML String
   
 - [tinyhtml](https://github.com/triskeljs/tinyhtml#readme)
-  Based on previous libraries, converts HTML String into a TSList and the resulting list back to a HTML String.
+  Based on previous libraries, converts HTML String into a [TSList] and the resulting list back to a HTML String.
   Using Options for remove comments, spaces, etc resulting a minified HTML.
 
 - [render](https://github.com/triskeljs/render#readme)
-  Renders recursivelly a TSList into a DOM node. Render library offers two time processing callbacks:
+  Renders recursivelly a [TSList] into a DOM node. Render library offers two time processing callbacks:
     - `withNode` *Function*, this callbacks allows process every single node rendered and set when to, replace by a comment or attach a initNode callback
     - `initNode` *Function*, this callback is executed only for the nodes determined by `withNode` for initialize the node before all nodes are rendered
 
