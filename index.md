@@ -73,3 +73,13 @@ Every `Object` in list describes a single DOM Element Node using following prope
 - [con-text](https://github.com/triskeljs/con-text#readme)
   Provides a context for processing text in rendering time.
   Context allows to define filters for evaluating text expressions ` person.first_name | toUpperCase ` (` expression | filterFn `) and for interpolating texts with expressions `Hi {{ person.first_name }}! How are you?`
+
+- [app](https://github.com/triskeljs/app#readme)
+  On top of render and con-text, `app` offers a service for rendering data into DOM using `con-text` for formatting Text Nodes.
+  `app` allows to define:
+    - `components`: helper for initialize DOM Nodes based on Tag Names
+    - `directives`: helper for initialize DOM Nodes based on attributes (allows RegExp format)
+   `app` also interpolates automatically Text Nodes
+   
+- [template](https://github.com/triskeljs/template#readme)
+  Based on `con-text` and using decission tokens renders a String template into a resulting String (like [EJS](https://ejs.co/))
