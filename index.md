@@ -84,4 +84,4 @@ Every `Object` in list describes a single DOM Element Node using following prope
 - [template](https://github.com/triskeljs/template#readme)
   Based on `con-text` and using decission tokens renders a String template into a resulting String (like [EJS](https://ejs.co/))
   
-*[HTML]: HyperText Markup Language
+[TSList]: #triskel-structured-list-tslist
