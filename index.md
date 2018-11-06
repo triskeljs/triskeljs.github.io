@@ -34,7 +34,7 @@ Lorem ipsum...
   { $: 'br', self_closed: true },
 ]
 ```
-### Triskel Nodes List (`TSList`)
+### Triskel Structured List (`TSList`)
 
 > Basically Triskel format is a multi-level list of strings or objects, where strings represents DOM Text Nodes and objects represents DOM Element Nodes.
 
