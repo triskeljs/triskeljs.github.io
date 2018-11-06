@@ -32,11 +32,22 @@ Is parsed in an Object like that:
   { $: 'br', self_closed: true },
 ]
 ```
+# Nodes list
 
-> Basically is a list of strings or objects, where strings represents DOM Text Nodes and objects represents DOM Element Nodes.
+> Basically Triskel format is a multi-level list of strings or objects, where strings represents DOM Text Nodes and objects represents DOM Element Nodes.
 
 ``` js
 [Object, String, Object, ...]
 ```
 
+### Object structure
+
+Every `Object` in list describes a single DOM Element Node using following properties:
+  - `$`: HTML Tag (like 'body', 'div', 'span', 'blockquote', ...)
+  - `attrs`: Plain Object with a dictionary of Node attributes
+    - `{ 'class': 'col-md-6' }`
+    - `<script async>` -> `{ $: 'script', attrs: { async: '' } }` (empty attribute)
+  - _: Node children `<Array, String>`
+    - `Array`: Recursive Nodes List `[Object, String, Object, ...]`
+    - `String`: When a child is just a String, it represents a single Text Node child
 
