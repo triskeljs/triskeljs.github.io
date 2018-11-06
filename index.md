@@ -56,10 +56,10 @@ Every `Object` in list describes a single DOM Element Node using following prope
 ## TriskelJS suite repos:
 
 - [parser](https://github.com/triskeljs/parser#readme)
-  Converts String HTML to a Triskel Structured List
+  Converts String HTML to a [TSList](#triskel-structured-list-tslist)
 
 - [stringify](https://github.com/triskeljs/stringify#readme)
-  Converts back a Triskel Structured List to a HTML String
+  Converts back a [TSList](#triskel-structured-list-tslist) to a HTML String
   
 - [tinyhtml](https://github.com/triskeljs/tinyhtml#readme)
   Based on previous libraries, converts HTML String into a TSList and the resulting list back to a HTML String.
@@ -83,3 +83,5 @@ Every `Object` in list describes a single DOM Element Node using following prope
    
 - [template](https://github.com/triskeljs/template#readme)
   Based on `con-text` and using decission tokens renders a String template into a resulting String (like [EJS](https://ejs.co/))
+  
+*[HTML]: HyperText Markup Language
